@@ -8,6 +8,8 @@ const PhoneInput = () => {
   const [response, setResponse] = useState("");
 
   const regex = /^[0-9]+$/;
+  console.log("Backend URL:", import.meta.env.VITE_BACKEND_URL);
+  console.log("Environment:", import.meta.env);
 
   const handleChange = (e) => {
     setPhone(e.target.value);
