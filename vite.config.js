@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/validate-otp": "http://localhost:3000", // Proxy to your backend
-      "/send": "http://localhost:3000", // Proxy to your backend
+      "/validate-otp": "https://otp-backend-taupe.vercel.app", // Proxy to your backend
+      "/send": "https://otp-backend-taupe.vercel.app", // Proxy to your backend
     },
   },
 });
