@@ -16,6 +16,7 @@ function OptInput({ phone }) {
       ref.current[0].focus(); // Focus on the first input
     }
   }, []);
+  const url = import.meta.env.VITE_BACKEND_URL;
 
   // taking input in otp
   const handleChange = (e, index) => {
@@ -40,7 +41,7 @@ function OptInput({ phone }) {
     console.log(otp);
 
     try {
-      const response = await fetch("/validate-otp", {
+      const response = await fetch(`${url}/validate-otp`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

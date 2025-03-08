@@ -8,6 +8,7 @@ const PhoneInput = () => {
   const [response, setResponse] = useState("");
 
   const regex = /^[0-9]+$/;
+  const url = import.meta.env.VITE_BACKEND_URL;
 
   const handleChange = (e) => {
     setPhone(e.target.value);
@@ -20,7 +21,7 @@ const PhoneInput = () => {
       setSubmitted(true);
 
       try {
-        const result = await fetch(`/send`, {
+        const result = await fetch(`${url}/send`, {
           method: "post",
           headers: {
             "Content-Type": "application/json",
