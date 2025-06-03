@@ -3,9 +3,9 @@
     "apps": [],
     "details": [
       {
-        "appID": "1435469474.com.Uidai.mAadhaar",
+        "appID": "JM56XFTHH7.com.Uidai.mAadhaar",
         "paths": [
-          "/MainApp/*",
+          "/otp-frontend-seven.vercel.app/*",
           "/"
         ]
       }
