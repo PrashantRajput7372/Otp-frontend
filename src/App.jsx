@@ -1,34 +1,27 @@
-import "./App.css";
-
 function App() {
   const handleOpen = () => {
-    const appScheme = "maadhaar://"; // Your custom scheme
-    const appStoreLink = "https://apps.apple.com/app/id1435469474"; // Your app's App Store link
-    const now = Date.now();
+    const appScheme = "maadhaar://";
+    const appStoreURL = "https://apps.apple.com/app/id1435469474";
 
-    // Set fallback timeout
-    const fallback = setTimeout(() => {
-      // If we're still on the page after ~1.5s, app likely didn't open
-      if (Date.now() - now < 1600) {
-        window.location.href = appStoreLink;
-      }
-    }, 1500);
+    const timeout = setTimeout(() => {
+      window.location.href = appStoreURL;
+    }, 2000);
 
-    // Add visibility listener to cancel fallback if app opened
-    const onVisibilityChange = () => {
+    // Listen for page becoming hidden (app opened)
+    const handleVisibilityChange = () => {
       if (document.hidden) {
-        clearTimeout(fallback); // Cancel fallback if app opened
+        clearTimeout(timeout); // App opened, cancel fallback
       }
     };
 
-    document.addEventListener("visibilitychange", onVisibilityChange);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
-    // Try to open the app
+    // Attempt to open app
     window.location.href = appScheme;
 
-    // Cleanup the listener after 3s
+    // Cleanup after 3 seconds
     setTimeout(() => {
-      document.removeEventListener("visibilitychange", onVisibilityChange);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     }, 3000);
   };
 
