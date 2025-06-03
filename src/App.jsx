@@ -1,4 +1,4 @@
-import InputNumber from "./Compoents/InputNumber";
+
 
 import "./App.css";
 
@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <div className="App">
-{/*         <InputNumber /> */}
         <button onClick = {handleOpen}>OpenApp</button>
       </div>
     </>
