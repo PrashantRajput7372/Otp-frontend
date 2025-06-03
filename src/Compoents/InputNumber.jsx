@@ -14,6 +14,10 @@ const PhoneInput = () => {
     setPhone(e.target.value);
   };
 
+  const handleOpen = ()=>{
+    const universallink = 
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -67,8 +71,15 @@ const PhoneInput = () => {
               >
                 Send OTP
               </button>
+                          
             </div>
           </form>
+           <button onClick = {handleOpen}
+                type="submit"
+                className="bg-blue-500 w-40 h-12 text-2xl rounded-lg hover:bg-blue-700 text-white"
+              >
+                open
+              </button>
         </div>
       ) : (
         <div>
