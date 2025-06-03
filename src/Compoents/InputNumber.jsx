@@ -78,7 +78,7 @@ const PhoneInput = () => {
                 type="submit"
                 className="bg-blue-500 w-40 h-12 text-2xl rounded-lg hover:bg-blue-700 text-white"
               >
-                open
+                openApp
               </button>
         </div>
       ) : (
