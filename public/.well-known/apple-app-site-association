@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "1435469474.com.Uidai.mAadhaar",
+        "paths": [
+          "/open/*",
+          "/"
+        ]
+      }
+    ]
+  }
+}
