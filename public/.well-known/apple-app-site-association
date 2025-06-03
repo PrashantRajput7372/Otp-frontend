@@ -5,7 +5,7 @@
       {
         "appID": "1435469474.com.Uidai.mAadhaar",
         "paths": [
-          "/login/*",
+          "/MainApp/*",
           "/"
         ]
       }
