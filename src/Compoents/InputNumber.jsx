@@ -15,7 +15,7 @@ const PhoneInput = () => {
   };
 
   const handleOpen = ()=>{
-    const universallink = 
+       window.location.href=  'https://otp-frontend-seven.vercel.app/MainApp'
   }
 
   const handleSubmit = async (e) => {
