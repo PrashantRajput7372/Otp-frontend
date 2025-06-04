@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={handleOpen}>Open App MahaDEV 5</button>
+      <button onClick={handleOpen}>Open App MahaDEV 2</button>
     </div>
   );
 }
