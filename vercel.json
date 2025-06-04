@@ -5,6 +5,10 @@
       "destination": "/apple-app-site-association"
     },
     {
+      "source": "/mypath",
+      "destination": "/"
+    },
+    {
       "source": "/(.*)",
       "destination": "/"
     }
