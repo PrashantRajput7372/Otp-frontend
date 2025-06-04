@@ -1,6 +1,6 @@
 function App() {
   const handleOpen = () => {
-    window.location.href = 'myaadhaar::/';
+    window.location.href = 'maadhaar://';
 
   };
 
