@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="App">
       <h1>Home Page</h1>
-      <button onClick={handleOpen}>Open App MahaDEV 2</button>
+      <button onClick={handleOpen}>Open App MahaDEV SAMBHU TRIPURARI</button>
     </div>
   );
 }
