@@ -7,7 +7,7 @@
         ],
         "components": [
           {
-            "/": "/open/*",
+            "/": "/open/",
             "comment": "Matches any URL with a path that starts with /list/."
           }
         ]
