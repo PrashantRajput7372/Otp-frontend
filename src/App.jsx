@@ -1,7 +1,7 @@
 function App() {
   const handleOpen = () => {
    
-      window.location.assign("maadhaar://");
+      window.location.assign("https://otp-frontend-seven.vercel.app/mypath");
 
   };
 
