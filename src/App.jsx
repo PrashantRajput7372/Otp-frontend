@@ -1,6 +1,6 @@
 function App() {
   const handleOpen = () => {
-    window.location.href = 'https://otp-frontend-seven.vercel.app/open';
+    window.location.href = 'myaadhaar::/';
 
   };
 
