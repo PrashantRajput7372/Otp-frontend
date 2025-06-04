@@ -1,6 +1,6 @@
 function App() {
   const handleOpen = () => {
-    window.location.href = 'https://otp-frontend-seven.vercel.app/open-in-app';
+    window.location.href = 'https://otp-frontend-seven.vercel.app/';
 
   };
 
