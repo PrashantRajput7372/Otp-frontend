@@ -14,9 +14,9 @@ const PhoneInput = () => {
     setPhone(e.target.value);
   };
 
-  const handleOpen = ()=>{
-       window.location.href=  'https://otp-frontend-seven.vercel.app/MainApp'
-  }
+  const handleOpen = () => {
+    window.location.href = "https://otp-frontend-seven.vercel.app/MainApp";
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -71,16 +71,9 @@ const PhoneInput = () => {
               >
                 Send OTP
               </button>
-                   <button onClick = {handleOpen}
-                type="submit"
-                className="bg-blue-500 w-40 h-12 text-2xl rounded-lg hover:bg-blue-700 text-white"
-              >
-                openApp
-              </button>
-        
             </div>
           </form>
-                  </div>
+        </div>
       ) : (
         <div>
           <OptInput phone={phone} />

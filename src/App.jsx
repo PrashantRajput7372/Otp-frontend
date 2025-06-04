@@ -1,23 +1,21 @@
+// src/App.js
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage";
+import OpenAppPage from "./OpenAppPage";
+import InputNumber from "./Compoents/InputNumber";
+import "./App.css";
 
 function App() {
-  const path = window.location.pathname;
-
-  if (path === "/mypath") {
-    return <div>Opening App…</div>;
-  }
-
-  const handleOpen = () => {
-    window.location.href = "https://otp-frontend-seven.vercel.app/mypath";
-  };
-
   return (
-    <div style={{ padding: '40px', textAlign: 'center' }}>
-      <h1>Home Page</h1>
-      <button onClick={handleOpen}>
-        Open App MahaDEV SAMBHU TRIPURARI
-      </button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/mypath" element={<OpenAppPage />} />
+        <Route path="/input" element={<InputNumber />} />
+      </Routes>
+    </Router>
   );
 }
 
