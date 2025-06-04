@@ -1,7 +1,7 @@
 function App() {
   const handleOpen = () => {
    
-      window.location.assign("aadhaar://");
+      window.location.assign("maadhaar://");
 
   };
 
