@@ -1,32 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function Home() {
+function App() {
+  const path = window.location.pathname;
+
+  if (path === "/mypath") {
+    return <div>Opening App…</div>;
+  }
+
   const handleOpen = () => {
-    // This is the Universal Link that will open the iOS app
     window.location.href = "https://otp-frontend-seven.vercel.app/mypath";
   };
 
   return (
-    <div className="App">
+    <div style={{ padding: '40px', textAlign: 'center' }}>
       <h1>Home Page</h1>
-      <button onClick={handleOpen}>Open App MahaDEV SAMBHU TRIPURARI</button>
+      <button onClick={handleOpen}>
+        Open App MahaDEV SAMBHU TRIPURARI
+      </button>
     </div>
-  );
-}
-
-function MyPath() {
-  return <div>Opening App…</div>; // This page prevents 404 for iOS Universal Links
-}
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/mypath" element={<MyPath />} />
-      </Routes>
-    </Router>
   );
 }
 
