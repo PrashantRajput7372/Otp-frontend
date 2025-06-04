@@ -1,13 +1,16 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "JM56XFTHH7.com.Uidai.mAadhaar",
-        "paths": [
-          "https://otp-frontend-seven.vercel.app/"
+        "appIDs": [
+          "JM56XFTHH7.com.Uidai.mAadhaar"
+        ],
+        "components": [
+          {
+            "/": "/open/*",
+            "comment": "Matches any URL with a path that starts with /list/."
+          }
         ]
-        
       }
     ]
   }
