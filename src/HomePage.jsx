@@ -1,5 +1,5 @@
 // src/HomePage.js
-import React from "react";
+import "react";
 
 export default function HomePage() {
   const handleOpen = () => {

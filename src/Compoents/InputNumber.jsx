@@ -14,9 +14,9 @@ const PhoneInput = () => {
     setPhone(e.target.value);
   };
 
-  const handleOpen = () => {
-    window.location.href = "https://otp-frontend-seven.vercel.app/MainApp";
-  };
+  // const handleOpen = () => {
+  //   window.location.href = "https://otp-frontend-seven.vercel.app/MainApp";
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
