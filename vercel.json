@@ -1,4 +1,18 @@
 {
+  "rewrites": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "destination": "/apple-app-site-association"
+    },
+    {
+      "source": "/mypath",
+      "destination": "/"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
@@ -8,24 +22,6 @@
           "value": "application/json"
         }
       ]
-    },
-    {
-      "source": "/apple-app-site-association",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/.well-known/apple-app-site-association",
-      "dest": "/apple-app-site-association",
-      "headers": {
-        "Content-Type": "application/json"
-      }
     }
   ]
 }
