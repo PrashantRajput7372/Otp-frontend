@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "J287W8AHQ3.com.Uidai.mAadhaar",
-        "paths": ["/mypath/*"]
+        "paths": ["/mypath"]
       }
     ]
   }
