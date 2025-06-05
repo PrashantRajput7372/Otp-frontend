@@ -3,6 +3,7 @@ import "react";
 
 export default function HomePage() {
   const handleOpen = () => {
+     window.location.href = 'maadhaar://';
     // Trigger universal link (this could be your actual domain + route)
     window.location.href = "https://otp-frontend-seven.vercel.app/mypath";
   };
@@ -17,7 +18,7 @@ export default function HomePage() {
         onClick={handleOpen}
         className="bg-blue-500 w-max-full h-14 p-4 text-2xl rounded-lg hover:bg-blue-700 text-white"
       >
-        Open App MahaDEV SAMBHU TRIPURARI
+        Open IOS APP
       </button>
     </div>
   );
