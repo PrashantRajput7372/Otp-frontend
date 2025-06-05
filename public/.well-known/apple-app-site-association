@@ -1,11 +1,19 @@
+
 {
-  "applinks": {
-    "apps": [],
+ "applinks": {
     "details": [
-      {
-        "appID": "J287W8AHQ3.com.Uidai.mAadhaar",
-        "paths": [ "/mypath/*", "mypath" ]
-      }
-    ]
-  }
-}
+     {
+       "appIDs": [
+          "J287W8AHQ3.com.Uidai.mAadhaar"
+        ],
+        "components": [
+           {
+            "/": "/mypath/*,
+            "comment": "Matches any URL with a path that starts with /open/."
+           }
+        ]
+       }
+     ]
+   }
+ }
+
