@@ -18,7 +18,7 @@ export default function HomePage() {
         onClick={handleOpen}
         className="bg-blue-500 w-max-full h-14 p-4 text-2xl rounded-lg hover:bg-blue-700 text-white"
       >
-        Open IOS APP
+        Open IOS APP!!
       </button>
     </div>
   );
