@@ -3,7 +3,7 @@ import "react";
 
 export default function HomePage() {
   const handleOpen = () => {
-     window.location.href = 'maadhaar://';
+     // window.location.href = 'maadhaar://';
     // Trigger universal link (this could be your actual domain + route)
     window.location.href = "https://otp-frontend-seven.vercel.app/mypath";
   };
