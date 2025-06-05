@@ -9,7 +9,7 @@ export default function OpenAppPage() {
 
   return (
     <div style={{ padding: "40px", textAlign: "center" }}>
-      <h2>Opening App…</h2>
+      <h1 className = "text-white font-bold text-2xl">Opening App…</h1>
     </div>
   );
 }
