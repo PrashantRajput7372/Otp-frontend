@@ -1,21 +1,24 @@
-// src/App.js
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import OpenAppPage from "./OpenAppPage";
-import InputNumber from "./Compoents/InputNumber";
-import "./App.css";
-
 function App() {
+  const handleOpen = () => {
+    window.location.href = "maadhaar://";
+  };
+  function showSmartAppBanner() {
+    const meta = document.createElement("meta");
+    meta.name = "apple-itunes-app";
+    meta.content = "app-id=1435469474";
+    document.head.appendChild(meta);
+
+    // iOS Safari loads the banner only if the meta tag is present at page load.
+    // This trick might not work unless you reload the page.
+    // So you may need to trigger a reload:
+    setTimeout(() => {
+      window.location.reload();
+    }, 100); // Short delay to allow DOM to update
+  }
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/mypath" element={<OpenAppPage />} />
-        <Route path="/input" element={<InputNumber />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <button onClick={showSmartAppBanner}>Open App MahaDEV 3</button>
+    </div>
   );
 }
 
