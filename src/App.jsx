@@ -1,4 +1,4 @@
-import './HomePage.jsx'
+import HomePage from './HomePage'
 
 function App() {
   const handleOpen = () => {
