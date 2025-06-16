@@ -7,8 +7,8 @@ function App() {
   
   return (
     <div className="App">
-     // <button onClick={()=>handleOpen()}>Open App MahaDEV 1</button>
-      <HomePage />
+     <button onClick={()=>handleOpen()}>Open App MahaDEV 1</button>
+     
     </div>
   );
 }
