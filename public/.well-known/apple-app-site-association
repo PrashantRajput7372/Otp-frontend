@@ -1,23 +1,15 @@
 {
-  "applinks": {
-    "apps": [],
+"applinks": {
+    "apps": [ ],
     "details": [
-      {
-        "appID": "J287W8AHQ3.com.Uidai.mAadhaar",
-        "paths": [
-          "*",
-          "/extra-path-1/*",
-          "/extra-path-2/*",
-          "/extra-path-3/*",
-          "/extra-path-4/*",
-          "/extra-path-5/*",
-          "/info/about/*",
-          "/help/*",
-          "/faq/*",
-          "/account/settings/*",
-          "/account/profile/*"
-        ]
-      }
+        {
+            "appID": "JM56XFTHH7.com.Uidai.mAadhaar",
+            "paths": [ "/path/to/content", "/path/to/other/*", "NOT /path/to/exclude" ]
+        },
+        {
+            "appID": "J287W8AHQ3.com.Uidai.mAadhaar",
+            "paths": [ "*" ]
+        }
     ]
-  }
+}
 }
