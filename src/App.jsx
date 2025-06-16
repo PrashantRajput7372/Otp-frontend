@@ -1,3 +1,5 @@
+import './HomePage.jsx'
+
 function App() {
   const handleOpen = () => {
     window.location.href = "https://otp-frontend-seven.vercel.app/mypath";
@@ -5,7 +7,8 @@ function App() {
   
   return (
     <div className="App">
-      <button onClick={()=>handleOpen()}>Open App MahaDEV 1</button>
+     // <button onClick={()=>handleOpen()}>Open App MahaDEV 1</button>
+      <HomePage />
     </div>
   );
 }
