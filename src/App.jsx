@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
      <a href="https://try-ecru-two.vercel.app/extra-path-1/ulink">Open mAaadhar</a>
-      <div onclick= location.href = "https://try-ecru-two.vercel.app/extra-path-1/ulink">open App</div>
+      <div onclick= "location.href='https://try-ecru-two.vercel.app/extra-path-1/ulink';">open App</div>
      
     </div>
   );
