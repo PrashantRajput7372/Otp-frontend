@@ -2,7 +2,7 @@ import HomePage from './HomePage'
 
 function App() {
   const handleOpenApp = ()=>{
-  const universalLink = “https://try-ecru-two.vercel.app/extra-path-1/ulink"
+  const universalLink = 'https://try-ecru-two.vercel.app/extra-path-1/ulink'
   window.location.href = universalLink
 }  
   return (
